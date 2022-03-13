@@ -1,50 +1,60 @@
-<html lang="en">
-
-<head>
-    <title>Document</title>
-    <style>
-        div.container {
-            height: 132px;
-            position: relative;
-        }
-        div.zauto {
-            position: absolute;
-            border: 1px solid black;
-            width: 100px; height: 100px;
-        }
-        div.zone {
-            background: purple;
-            top: 0; left: 0;
-        }
-        div.ztwo {
-            background: orange;
-            top: 10px; left: 10px;
-        }
-        div.zthree {
-            background: magenta;
-            top: 20px; left: 20px;
-        }
-        div.zfour {
-            background: yellow;
-            top: 30px; left: 30px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class='container'>
-        <div class='zauto zone'></div>
-        <div class='zauto ztwo'></div>
-        <div class='zauto zthree'></div>
-        <div class='zauto zfour'></div>
-    </div>
-    <hr>
-    <div class='container'>
-        <div class='zauto zone' style="z-index: 4;"></div>
-        <div class='zauto ztwo' style="z-index: 3;"></div>
-        <div class='zauto zthree' style="z-index: 2;"></div>
-        <div class='zauto zfour' style="z-index: 1;"></div>
-    </div>
-</body>
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="wdith=device-wdith, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Absolute</title>
+        <style>
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 500px;
+                height: 500px;
+            }
+            .position {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            #card1 {
+                background-color: red;
+                z-index: 5;
+            }
+            #card2 {
+                background-color: blue;
+                top: 30px;
+                left: 30px;
+                z-index: 4;
+            }
+            #card3 {
+                background-color: green;
+                top: 60px;
+                left: 60px;
+                z-index: 3;
+            }
+            #card4 {
+                background-color: aqua;
+                top: 90px;
+                left: 90px;
+                z-index: 2;
+            }
+            #card5 {
+                background-color: pink;
+                top: 120px;
+                left: 120px;
+                z-index: 1;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="position" id="card1"></div>
+            <div class="position" id="card2"></div>
+            <div class="position" id="card3"></div>
+            <div class="position" id="card4"></div>
+            <div class="position" id="card5"></div>
+        </div>
+    </body>
 </html>

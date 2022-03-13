@@ -1,0 +1,52 @@
+h1.header {
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+p img {
+    width: 100%;
+}
+
+h1.name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+blockquote {
+    font-size: 24px;
+    font-weight: 600;
+    color: red;
+}
+
+.skills-list {
+    color: red;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+tr>:nth-child(1) {
+    color: red;
+}
+
+.btn-next {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+}
